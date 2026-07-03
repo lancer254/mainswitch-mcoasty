@@ -59,80 +59,71 @@ export default function Home() {
       Find affordable hostels and rentals around Chuka University.
     </p>
 
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <div className="bg-zinc-900 rounded-2xl overflow-hidden">
-        <img
-          src="https://placehold.co/600x400?text=Bedsitter"
-          alt="Bedsitter"
-          className="w-full h-52 object-cover"
-        />
+      {[
+        {
+          image: "/houses/house1.jpeg",
+          title: "Bedsitter",
+          price: "KSh 4,500 / Month",
+          desc: "5 minutes from Chuka University."
+        },
+        {
+          image: "/houses/house2.jpeg",
+          title: "One Bedroom",
+          price: "KSh 7,500 / Month",
+          desc: "Spacious and secure apartment."
+        },
+        {
+          image: "/houses/house3.jpeg",
+          title: "Student Hostel",
+          price: "KSh 3,800 / Month",
+          desc: "Affordable rooms with free Wi-Fi."
+        },
+        {
+          image: "/houses/house4.jpeg",
+          title: "Executive Bedsitter",
+          price: "KSh 5,500 / Month",
+          desc: "Modern rooms with excellent security."
+        },
+      ].map((house, index) => (
+        <div
+          key={index}
+          className="bg-zinc-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-orange-500/30 hover:scale-105 transition duration-300"
+        >
+          <img
+            src={house.image}
+            alt={house.title}
+            className="w-full h-56 object-cover"
+          />
 
-        <div className="p-6">
-          <h3 className="text-2xl font-bold">Bedsitter</h3>
+          <div className="p-6">
+            <h3 className="text-2xl font-bold">{house.title}</h3>
 
-          <p className="text-orange-500 text-xl mt-2">
-            KSh 4,500 / Month
-          </p>
+            <p className="text-orange-500 text-xl mt-2">
+              {house.price}
+            </p>
 
-          <p className="mt-3 text-gray-400">
-            5 minutes from Chuka University.
-          </p>
+            <p className="mt-3 text-gray-400">
+              {house.desc}
+            </p>
 
-          <button className="mt-6 w-full bg-orange-500 hover:bg-orange-600 py-3 rounded-xl">
-            View House
-          </button>
+            <button className="mt-6 w-full bg-orange-500 hover:bg-orange-600 py-3 rounded-xl font-semibold">
+              View House
+            </button>
+          </div>
         </div>
-      </div>
+      ))}
 
-      <div className="bg-zinc-900 rounded-2xl overflow-hidden">
-        <img
-          src="https://placehold.co/600x400?text=One+Bedroom"
-          alt="One Bedroom"
-          className="w-full h-52 object-cover"
-        />
+    </div>
 
-        <div className="p-6">
-          <h3 className="text-2xl font-bold">One Bedroom</h3>
-
-          <p className="text-orange-500 text-xl mt-2">
-            KSh 7,500 / Month
-          </p>
-
-          <p className="mt-3 text-gray-400">
-            Spacious and secure apartment.
-          </p>
-
-          <button className="mt-6 w-full bg-orange-500 hover:bg-orange-600 py-3 rounded-xl">
-            View House
-          </button>
-        </div>
-      </div>
-
-      <div className="bg-zinc-900 rounded-2xl overflow-hidden">
-        <img
-          src="https://placehold.co/600x400?text=Student+Hostel"
-          alt="Student Hostel"
-          className="w-full h-52 object-cover"
-        />
-
-        <div className="p-6">
-          <h3 className="text-2xl font-bold">Student Hostel</h3>
-
-          <p className="text-orange-500 text-xl mt-2">
-            KSh 3,800 / Month
-          </p>
-
-          <p className="mt-3 text-gray-400">
-            Affordable rooms with free Wi-Fi.
-          </p>
-
-          <button className="mt-6 w-full bg-orange-500 hover:bg-orange-600 py-3 rounded-xl">
-            View House
-          </button>
-        </div>
-      </div>
-
+    <div className="text-center mt-12">
+      <a
+        href="/houses"
+        className="inline-block bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-xl font-bold transition"
+      >
+        View All Houses →
+      </a>
     </div>
 
   </div>
