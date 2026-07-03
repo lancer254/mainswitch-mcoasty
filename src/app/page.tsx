@@ -173,6 +173,112 @@ export default function Home() {
     </div>
   </div>
 </section>
+<section className="bg-zinc-950 py-20 px-6">
+  <div className="max-w-7xl mx-auto">
+
+    <h2 className="text-4xl font-bold text-center text-orange-500">
+      Premium Laundry Services
+    </h2>
+
+    <p className="text-center text-gray-400 mt-4 mb-12 max-w-3xl mx-auto">
+      Fast, fresh and reliable laundry services around Chuka University.
+      We pick up your laundry at your doorstep and deliver it back clean,
+      fresh and neatly folded.
+    </p>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-orange-500 transition">
+        <h3 className="text-2xl font-bold text-orange-500">Small Basket</h3>
+        <p className="text-4xl font-bold mt-4">KSh 300</p>
+
+        <ul className="mt-6 space-y-3 text-gray-300">
+          <li>✔ Fresh Fragrance</li>
+          <li>✔ Fast Service</li>
+          <li>✔ Neatly Folded</li>
+          <li>✔ Doorstep Pickup & Delivery</li>
+        </ul>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-orange-500 transition">
+        <h3 className="text-2xl font-bold text-orange-500">Narrow Large Basket</h3>
+        <p className="text-4xl font-bold mt-4">KSh 350</p>
+
+        <ul className="mt-6 space-y-3 text-gray-300">
+          <li>✔ Fresh Fragrance</li>
+          <li>✔ Fast Service</li>
+          <li>✔ Neatly Folded</li>
+          <li>✔ Doorstep Pickup & Delivery</li>
+        </ul>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-orange-500 transition">
+        <h3 className="text-2xl font-bold text-orange-500">Wide Large Basket</h3>
+        <p className="text-4xl font-bold mt-4">KSh 450</p>
+
+        <ul className="mt-6 space-y-3 text-gray-300">
+          <li>✔ Fresh Fragrance</li>
+          <li>✔ Fast Service</li>
+          <li>✔ Neatly Folded</li>
+          <li>✔ Doorstep Pickup & Delivery</li>
+        </ul>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-orange-500 transition">
+        <h3 className="text-2xl font-bold text-orange-500">Duvets</h3>
+        <p className="text-4xl font-bold mt-4">KSh 350</p>
+
+        <ul className="mt-6 space-y-3 text-gray-300">
+          <li>✔ Deep Cleaning</li>
+          <li>✔ Fresh Fragrance</li>
+          <li>✔ Doorstep Pickup & Delivery</li>
+        </ul>
+      </div>
+
+      <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-orange-500 transition">
+        <h3 className="text-2xl font-bold text-orange-500">Carpets</h3>
+        <p className="text-4xl font-bold mt-4">KSh 400</p>
+
+        <ul className="mt-6 space-y-3 text-gray-300">
+          <li>✔ Deep Cleaning</li>
+          <li>✔ Fresh Fragrance</li>
+          <li>✔ Doorstep Pickup & Delivery</li>
+        </ul>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-500 to-blue-600 rounded-2xl p-8 text-center">
+
+        <h3 className="text-3xl font-bold">
+          Why Choose Mainswitch?
+        </h3>
+
+        <p className="mt-6">
+          🚚 We pick up your laundry at your doorstep and deliver it back fresh, clean and neatly folded.
+        </p>
+
+        <p className="mt-6 text-xl font-bold">
+          Who else if not Mainswitch?
+        </p>
+
+        <p className="mt-2">
+          You're just one call away from premium laundry services.
+        </p>
+
+        <a
+          href="https://wa.me/254700614387"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-8 bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition"
+        >
+          Book via WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
       <section
   id="services"
   className="bg-zinc-950 py-20 px-6"
